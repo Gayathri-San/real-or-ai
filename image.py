@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 import tensorflow as tf
 import streamlit as st
 from PIL import Image
@@ -40,3 +40,4 @@ if st.button("Predict"):
         confidence = np.max(prediction) * 100
 
         st.success(f"Prediction: **{class_names[predicted_class]}**")
+
